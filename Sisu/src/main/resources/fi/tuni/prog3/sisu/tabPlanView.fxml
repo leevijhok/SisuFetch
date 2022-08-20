@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TreeItem?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.*?>
+<VBox spacing="20" alignment="TOP_CENTER" xmlns:fx="http://javafx.com/fxml" fx:controller="fi.tuni.prog3.sisu.PlanViewController">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+    </padding>
+    <Label style="-fx-font-size: 30;" text="Degree structure"/>
+    <HBox spacing="20" alignment="TOP_CENTER">
+        <TreeView fx:id="courseTree" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" prefHeight="8000" prefWidth="8000">
+            <TreeItem expanded="true" value="Select a degree programme first!"/>
+        </TreeView>
+        <ScrollPane HBox.hgrow="ALWAYS" prefWidth="8000">
+            <VBox spacing="10">
+                <VBox spacing="10" alignment="TOP_CENTER" fx:id="courseSelectionList"/>
+            </VBox>
+        </ScrollPane>
+    </HBox>
+</VBox>

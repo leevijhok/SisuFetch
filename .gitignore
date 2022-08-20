@@ -1,0 +1,6 @@
+*.class
+/Sisu/target/
+.idea/
+/Sisu/nbproject/
+Sisu/Sisu.iml
+StudentInfo.json
